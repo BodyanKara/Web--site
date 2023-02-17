@@ -1,0 +1,38 @@
+.brands-list {
+    display: flex;
+    gap: var(--primary-gap);
+    flex-wrap: wrap;
+}
+
+.brands-list__item {
+    @include basis (1, 2);
+
+    @media screen and (min-width: 768px) {
+        @include basis (2, 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include basis (5, 6);
+    }
+}
+
+.brands-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    height: 92px;
+    transition: $transition-color, $transition_border-color;
+
+    &:hover,
+    &:focus {
+        color: $primary-color-hover;
+        border-color: $primary-color-hover;
+    }
+}
+
+.brands-list__logo {
+    fill: currentColor;
+}

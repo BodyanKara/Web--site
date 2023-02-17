@@ -1,0 +1,23 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #ECECEC;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.header .container {
+    position: relative;
+    max-width: 768px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
+@import './my-logo';
+@import './header-nav';
+@import './contacts-list';
+@import './main-social-list';
